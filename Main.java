@@ -14,5 +14,9 @@ public class Main {
         int n3 = n + n2;
         System.out.println(n3);
 
+        String name = "Daksh";
+        String lname = "Saini";
+        System.out.println(name + " " + lname); //String concatenation
+
     }
 }
