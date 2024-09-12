@@ -70,16 +70,64 @@ public class loops {
 //        }
 
         // Prime factor
-        System.out.print("Enter number to find prime factor: ");
-        int prime_fact = sc.nextInt();
-        int i = 2;
-        while(prime_fact > 1) {
-            if(prime_fact%i == 0) {
-                prime_fact /= i;
-                System.out.println(i); //print the factor
+//        System.out.print("Enter number to find prime factor: ");
+//        int prime_fact = sc.nextInt();
+//        int i = 2;
+//        while(prime_fact > 1) {
+//            if(prime_fact%i == 0) {
+//                prime_fact /= i;
+//                System.out.println(i); //print the factor
+//            }
+//            else {
+//                i++; //increment when i can no further divisible from prime_fact
+//            }
+//        }
+
+        //Prime factor of 2 numbers
+//        System.out.print("Enter number 1: ");
+//        int prime_fact1 = sc.nextInt();
+//
+//        System.out.print("Enter number 2: ");
+//        int prime_fact2 = sc.nextInt();
+//
+//        int i = 2; //checking_number
+//
+//        while(prime_fact1 > 1 || prime_fact2 > 1) {
+//            if(prime_fact1%i == 0 || prime_fact2%i == 0) {
+//                System.out.println(i);
+//            }
+//            if(prime_fact1%i == 0) {
+//                prime_fact1 /= i;
+//            }
+//            if(prime_fact2%i == 0) {
+//                prime_fact2 /= i;
+//            }
+//            else {
+//                i++;
+//            }
+//        }
+
+        // Greatest Common factor
+        System.out.print("Enter number 1: ");
+        int gcf1 = sc.nextInt();
+
+        System.out.print("Enter number 2: ");
+        int gcf2 = sc.nextInt();
+
+        int i = 2; //check number
+
+        while(gcf1 > 1 || gcf2 > 1) {
+            if(gcf1%i == 0 && gcf2%i == 0) {
+                System.out.println(i);
+            }
+            if(gcf1%i == 0) {
+                gcf1 /= i;
+            }
+            if(gcf2%i == 0) {
+                gcf2 /= i;
             }
             else {
-                i++; //increment when i can no further divisible from prime_fact
+                i++;
             }
         }
     }
