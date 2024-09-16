@@ -108,27 +108,61 @@ public class loops {
 //        }
 
         // Greatest Common factor
-        System.out.print("Enter number 1: ");
-        int gcf1 = sc.nextInt();
+//        System.out.print("Enter number 1: ");
+//        int gcf1 = sc.nextInt();
+//
+//        System.out.print("Enter number 2: ");
+//        int gcf2 = sc.nextInt();
+//
+//        int i = 2; //check number
+//
+//        while(gcf1 > 1 || gcf2 > 1) {
+//            if(gcf1%i == 0 && gcf2%i == 0) {
+//                System.out.println(i);
+//            }
+//            if(gcf1%i == 0) {
+//                gcf1 /= i;
+//            }
+//            if(gcf2%i == 0) {
+//                gcf2 /= i;
+//            }
+//            else {
+//                i++;
+//            }
+//        }
 
-        System.out.print("Enter number 2: ");
-        int gcf2 = sc.nextInt();
+        // Fibonacci series
+//        System.out.print("Enter number: ");
+//        int num = sc.nextInt();
+//
+//        int n1 = 0, n2 = 1, n3;
+//        int i = 1;
+//        System.out.print(n1 + " " + n2);
+//        while(i <= num) {
+//            n3 = n1 + n2;
+//            System.out.print(" " + n3 + " ");
+//            n1 = n2;
+//            n2 = n3;
+//            i++;
+//        }
 
-        int i = 2; //check number
-
-        while(gcf1 > 1 || gcf2 > 1) {
-            if(gcf1%i == 0 && gcf2%i == 0) {
-                System.out.println(i);
+        //Prime Number
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+        int i = 2, count = 0;
+        while(i < Math.sqrt(n)) {  // math function because iterating the loop till root of the number will give the same output
+            if(n % i == 0) {
+                count++;
+                break; // even if count becomes 1 it means the number is prime and it will also make it fast
             }
-            if(gcf1%i == 0) {
-                gcf1 /= i;
-            }
-            if(gcf2%i == 0) {
-                gcf2 /= i;
-            }
-            else {
-                i++;
-            }
+            i++;
         }
+        if(count > 0) {
+            System.out.println("Not prime");
+        }
+        else {
+            System.out.println("Prime");
+        }
+
     }
 }
