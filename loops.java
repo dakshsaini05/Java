@@ -147,22 +147,38 @@ public class loops {
 //        }
 
         //Prime Number
-        System.out.print("Enter number: ");
-        int n = sc.nextInt();
-        int i = 2, count = 0;
-        while(i < Math.sqrt(n)) {  // math function because iterating the loop till root of the number will give the same output
-            if(n % i == 0) {
-                count++;
-                break; // even if count becomes 1 it means the number is prime and it will also make it fast
-            }
-            i++;
-        }
-        if(count > 0) {
-            System.out.println("Not prime");
-        }
-        else {
-            System.out.println("Prime");
-        }
+//        System.out.print("Enter number: ");
+//        int n = sc.nextInt();
+//        int i = 2, count = 0;
+//        while(i < Math.sqrt(n)) {  // math function because iterating the loop till root of the number will give the same output
+//            if(n % i == 0) {
+//                count++;
+//                break; // even if count becomes 1 it means the number is prime and it will also make it fast
+//            }
+//            i++;
+//        }
+//        if(count > 0) {
+//            System.out.println("Not prime");
+//        }
+//        else {
+//            System.out.println("Prime");
+//        }
+
+        //Input 2 numbers a and b find a to the power b
+//        System.out.print("Enter number 1: ");
+//        int a = sc.nextInt(); // input number 1
+//
+//        System.out.print("Enter number 2: ");
+//        int b = sc.nextInt(); // input number 2
+//
+//        int c = 1; // to store the product
+//
+//        while(b > 0) {
+//            c *= a; // multiply the value of a by itself in each iteration and store it in c
+//            b--;
+//        }
+//        System.out.println(c);
+
 
     }
 }
