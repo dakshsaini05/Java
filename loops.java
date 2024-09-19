@@ -180,5 +180,32 @@ public class loops {
 //        System.out.println(c);
 
 
+
+        //change the number according to user input
+        System.out.print("Enter a four digit number: ");
+        int num = sc.nextInt();
+        System.out.print("Enter number between 1 to 4: ");
+        int num_rotate = sc.nextInt();
+
+        int count = 0; //To find the length of the digit entered
+        int temp = num;
+        while(temp > 0) {
+            count++;
+            temp/=10;
+        }
+
+        int pow = 1; // to find the number of zeros we have to put in below's logic
+        int tempCount = count;
+        while(tempCount - 1 > 0) { // -1 because we want only count-1 zeroes
+            pow = pow * 10;
+            tempCount--;
+        }
+
+        while(num_rotate > 0) {
+            num = ((num % 10) * pow) + (num / 10);
+            num_rotate--;
+        }
+        System.out.println(num);
+        
     }
 }
