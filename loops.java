@@ -220,7 +220,7 @@ public class loops {
 
         //if the number of rotations are in negative
         if(rotations < 0) {
-            rotations = count - rotations;
+            rotations = count + rotations;
         }
 
         while(rotations > 0){
