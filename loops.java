@@ -180,32 +180,56 @@ public class loops {
 //        System.out.println(c);
 
 
+        // nearest perfect square
+//        System.out.print("Enter a number: ");
+//        int squ = sc.nextInt();
+//
+//        int ans = 1;
+//
+//        while(ans*ans <= squ) {
+//            ans++;
+//        }
+//
+//        ans = ans -1;
+//        System.out.print(ans);
 
-        //change the number according to user input
-        System.out.print("Enter a four digit number: ");
+
+        // Change the number according o the user input
+        System.out.print("Enter number: ");
         int num = sc.nextInt();
-        System.out.print("Enter number between 1 to 4: ");
-        int num_rotate = sc.nextInt();
+        System.out.print("Enter value of k: ");
+        int rotations = sc.nextInt();
 
-        int count = 0; //To find the length of the digit entered
+        int count = 0; // finding number of digits
         int temp = num;
         while(temp > 0) {
             count++;
             temp/=10;
         }
 
-        int pow = 1; // to find the number of zeros we have to put in below's logic
+        int pow = 1; // finding number of zeros
         int tempCount = count;
-        while(tempCount - 1 > 0) { // -1 because we want only count-1 zeroes
-            pow = pow * 10;
+        while(tempCount -1 > 0) {
+            pow*= 10;
             tempCount--;
         }
+        int daksh = 0;
 
-        while(num_rotate > 0) {
-            num = ((num % 10) * pow) + (num / 10);
-            num_rotate--;
+        //if the number of rotations are more than the number of digits
+        rotations %= count;
+
+        //if the number of rotations are in negative
+        if(rotations < 0) {
+            rotations = count - rotations;
         }
+
+        while(rotations > 0){
+            num = ((num % 10) * pow) + (num / 10);
+            daksh++;
+            rotations--;
+        }
+
         System.out.println(num);
-        
+        System.out.println(daksh);
     }
 }
