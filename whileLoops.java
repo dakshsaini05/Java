@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class loops {
+public class whileLoops {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //while loop
@@ -213,6 +213,8 @@ public class loops {
             pow*= 10;
             tempCount--;
         }
+
+        // to count the number of rotations
         int daksh = 0;
 
         //if the number of rotations are more than the number of digits
