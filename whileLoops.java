@@ -195,43 +195,45 @@ public class whileLoops {
 
 
         // Change the number according o the user input
-        System.out.print("Enter number: ");
-        int num = sc.nextInt();
-        System.out.print("Enter value of k: ");
-        int rotations = sc.nextInt();
+//        System.out.print("Enter number: ");
+//        int num = sc.nextInt();
+//        System.out.print("Enter value of k: ");
+//        int rotations = sc.nextInt();
+//
+//        int count = 0; // finding number of digits
+//        int temp = num;
+//        while(temp > 0) {
+//            count++;
+//            temp/=10;
+//        }
+//
+//        int pow = 1; // finding number of zeros
+//        int tempCount = count;
+//        while(tempCount -1 > 0) {
+//            pow*= 10;
+//            tempCount--;
+//        }
+//
+//        // to count the number of rotations
+//        int daksh = 0;
+//
+//        //if the number of rotations are more than the number of digits
+//        rotations %= count;
+//
+//        //if the number of rotations are in negative
+//        if(rotations < 0) {
+//            rotations = count + rotations;
+//        }
+//
+//        while(rotations > 0){
+//            num = ((num % 10) * pow) + (num / 10);
+//            daksh++;
+//            rotations--;
+//        }
+//
+//        System.out.println(num);
+//        System.out.println(daksh);
 
-        int count = 0; // finding number of digits
-        int temp = num;
-        while(temp > 0) {
-            count++;
-            temp/=10;
-        }
 
-        int pow = 1; // finding number of zeros
-        int tempCount = count;
-        while(tempCount -1 > 0) {
-            pow*= 10;
-            tempCount--;
-        }
-
-        // to count the number of rotations
-        int daksh = 0;
-
-        //if the number of rotations are more than the number of digits
-        rotations %= count;
-
-        //if the number of rotations are in negative
-        if(rotations < 0) {
-            rotations = count + rotations;
-        }
-
-        while(rotations > 0){
-            num = ((num % 10) * pow) + (num / 10);
-            daksh++;
-            rotations--;
-        }
-
-        System.out.println(num);
-        System.out.println(daksh);
     }
 }
