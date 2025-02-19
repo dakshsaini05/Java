@@ -39,9 +39,26 @@ public class main {
         return ans;
     }
 
+    public static int fibo(int n) {
+        if(n <= 1) return n;
+
+        int fib = fibo(n-1) + fibo(n-2);
+        return fib;
+    }
+
+    public static void zigZag(int n) {
+        if(n == 0) return;
+
+        System.out.println("pre "+n);
+        zigZag(n-1);
+        System.out.println("in "+n);
+        zigZag(n-1);
+        System.out.println("post "+n);
+
+    }
+
     public static void main(String[] args) {
 
-        int ans = pow(5,3);
-        System.out.println(ans);
+       zigZag(3);
     }
 }
